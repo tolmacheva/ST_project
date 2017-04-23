@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ST-project.iml" filepath="$PROJECT_DIR$/ST-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab2.iml" filepath="$PROJECT_DIR$/Lab2.iml" />
+      <module fileurl="file://C:\School\Selenium\ST_project\Lab2\ST-project.iml" filepath="C:\School\Selenium\ST_project\Lab2\ST-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/js-lab2/js-lab2.iml" filepath="$PROJECT_DIR$/js-lab2/js-lab2.iml" />
     </modules>
   </component>
