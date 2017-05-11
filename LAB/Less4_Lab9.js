@@ -12,18 +12,17 @@ var chrome = require('selenium-webdriver/chrome');
 var By = webdriver.By;
 var until = webdriver.until;
 var test = require('selenium-webdriver/testing');
-var assert = require('assert');
+var $q = require('q');
 
 var userName = 'admin',
     password = 'admin';
 
 function ChackCountries(name) {
 }
-test.describe('Check Main Left menu', function() {
+test.describe('Check ', function () {
     var driver;
-    var prevCountryName = "";
 
-    test.before(function() {
+    test.before(function () {
 
         var options = new chrome.Options();
         driver = new webdriver.Builder()
@@ -39,46 +38,122 @@ test.describe('Check Main Left menu', function() {
         driver.manage().timeouts().implicitlyWait(10000);
     });
 
-    test.it('Проверяем 1', function() {
+    test.after(function () {
+        driver.quit();
+    });
+
+
+    test.it('Проверяем порядок стран', function () {
 
         driver.findElement(By.linkText("Countries")).click();
-        driver.findElements(By.css("table > tbody > tr")).then(function (tableRows) {
-            tableRows.forEach(function (row) {
-                row.findElements(By.tagName("td")).then(function (cells) {
-                    var countryName = cells[4].getAttribute("textContent");
 
-                    if (prevCountryName.localeCompare(cells.get(4).getAttribute("textContent")) == -1)
-                        prevCountryName = cells.get(4).getAttribute("textContent");
-                    else
-                        console.log(textContent + " Error");
-                });
+        driver.findElements(By.xpath("//*[@id='main']/form[@name ='countries_form']/table/tbody/tr/td[5]/a")).then(function (countries) {
+            i = 1;
+            var countiesForEach = [];
+            var prevCountryName = "";
+            countries.map(function (elem) {
+
+                var path1 = "//*[@id='main']/form[@name ='countries_form']/table/tbody/tr[" + i + "]/td[5]/a";
+                var path2 = "//*[@id='main']/form/table/tbody/tr[" + i + "]/td[6]";
+                var prevStateName = "";
+
+                countiesForEach.push(
+                    driver.findElement(By.xpath(path1)).then(function (country) {
+
+                        country.getAttribute("textContent").then(function (curCountryName) {
+
+                            if (prevCountryName.localeCompare(curCountryName) == -1) {
+                                prevCountryName = curCountryName;
+                            }
+                            else console.log(curCountryName + " - Error");
+
+                            driver.findElement(By.xpath(path2)).getAttribute("textContent").then(function (countZone) {
+                                if (countZone > 0) {
+                                    country.click().then(
+                                        function (click) {
+                                            driver.manage().timeouts().implicitlyWait(1000);
+                                            driver.findElements(By.xpath("//*[@id='main']/form/table/tbody/tr/td[3]/input[@name=contains(text(),zone)]"))
+                                                .then(function (zoneNames) {
+                                                    var arrZoneNames = [];
+                                                    zoneNames.map(function (curZone) {
+                                                        arrZoneNames.push(
+                                                            curZone.getAttribute("value").then(function (zoneName) {
+                                                                if (prevStateName.localeCompare(zoneName) == -1)
+                                                                    prevStateName = zoneName;
+                                                                else console.log(zoneName + " - Error");
+                                                            })
+                                                        );
+                                                    })
+                                                    $q.all(arrZoneNames);
+                                                });
+                                            driver.wait(function () {
+                                                driver.findElement(By.css("button.btn[name='cancel']")).click();
+                                            }, 1000)
+                                            return true;
+                                        },
+                                        function (err) {
+                                            return err;
+                                        }
+                                    )
+                                }
+                            });
+                        })
+                    })
+                );
+                i++;
             });
+            $q.all(countiesForEach)
         });
     });
 
-/*
-    test.it('Проверяем 2', function() {
 
-        var elemLink, elemSticker;
-        driver.findElements(By.css(".products .product a")).then(function (elemLink) {
-            return elemLink;
-        })
-            .then(function () {
-                driver.findElements(By.css(".products .product .sticker")).then(function (elemSticker) {
-                    return elemSticker;
+    test.it("Проверяем зоны", function () {
+
+        driver.findElement(By.linkText("Geo Zones")).click();
+        driver.findElements(By.xpath("//*[@id='main']/form/table/tbody/tr/td[3]/a"))
+            .then(function (zones) {
+                var arrZones = [];
+                i=1;
+                zones.map(function (elem) {
+
+                    var path1= "//*[@id='main']/form/table/tbody/tr[" + i + "]/td[3]/a";
+                    var path2 = "//*[@id='main']/form/table/tbody/tr/td[3]";
+
+                    arrZones.push(
+                    driver.findElement(By.xpath(path1))
+                        .then(function (curZone) {
+                            curZone.click().then(
+                                function (click) {
+                                    driver.manage().timeouts().implicitlyWait(1000);
+
+                                    var arrZoneNames = [];
+                                    var prevStateName = "";
+                                    driver.findElements(By.xpath(path2)).then(function (zoneNames) {
+                                        zoneNames.map(function (curZoneName) {
+                                            arrZoneNames.push(
+                                                curZoneName.getAttribute("textContent").then(function (name) {
+                                                    if (prevStateName.localeCompare(name) == -1)
+                                                        prevStateName = name;
+                                                    else console.log(curZoneName, "Error");
+                                                })
+                                            );
+                                        });
+                                        $q(arrZoneNames);
+                                    });
+                                    driver.wait(function () {
+                                        driver.findElement(By.css("button.btn[name='cancel']")).click();
+                                    }, 1000);
+                                    return true;
+                                },
+                                function (err) {
+                                    return false;
+                                }
+                            )
+                        })
+                    );
+                    i++;
                 });
-            })
-            .then(function (elemLink, elemSticker) {
-                if (elemLink.length === elemSticker.length) {
-                    assert.ok(elemSticker.length, "")
-                }
-
+                $q.all(arrZones);
             });
-    });
-*/
-
-
-    test.after(function() {
-        driver.quit();
     });
 });
