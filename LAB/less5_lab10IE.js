@@ -57,7 +57,7 @@ test.describe('Проверка стиля в Firefox', function () {
                     return attr; })
 
                 elem.getCssValue("font-size").then(function (attr) {
-                    priceSize = attr;
+                    priceSize = parseFloat(attr);
                     return priceSize; });
 
                 elem.getCssValue("text-decoration").then(function (attr) {
@@ -80,7 +80,7 @@ test.describe('Проверка стиля в Firefox', function () {
                     return attr;});
 
                 elem.getCssValue("font-size").then(function (attr) {
-                    salePriceSize = attr;
+                    salePriceSize = parseFloat(attr);
                     assert.ok( salePriceSize > priceSize, "Проверка - размер шрифта акционной цены и основной цены  на карточке");
                     return salePriceSize; });
 
@@ -115,7 +115,7 @@ test.describe('Проверка стиля в Firefox', function () {
                     return attr; })
 
                 elem.getCssValue("font-size").then(function (attr) {
-                    priceSize = attr;
+                    priceSize = parseFloat(attr);
                     return priceSize; });
 
                 elem.getCssValue("text-decoration").then(function (attr) {
@@ -137,7 +137,7 @@ test.describe('Проверка стиля в Firefox', function () {
                     return attr;});
 
                 elem.getCssValue("font-size").then(function (attr) {
-                    salePriceSize = attr;
+                    salePriceSize = parseFloat(attr);
                     assert.ok( salePriceSize > priceSize, "Проверка - размер акционной цены больше основной цены на странице");
                     return salePriceSize; });
 
