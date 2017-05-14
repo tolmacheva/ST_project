@@ -1,6 +1,6 @@
-// Задание 12
-// Войти на страницу http://localhost/litecart/admin
-// Зайти в меню Каталог и добавить новый товар
+// Задание 13
+// Войти на страницу http://localhost/litecart
+// Cценарий добавления товаров в корзину и удаления товаров из корзины.
 
 
 var webdriver = require('selenium-webdriver');
