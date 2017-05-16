@@ -9,11 +9,11 @@ var until = webdriver.until;
 var test = require('selenium-webdriver/testing');
 var promise = require('selenium-webdriver').promise;
 var assert = require('assert');
-var linlkLength,  stickLength;
+var $q = require('q');
 
 test.describe('Check Main Left menu', function() {
     var driver;
-    //var linlkLength,  stickLength;
+    var linlkLength,  stickLength;
 
     test.before(function() {
         driver = new webdriver.Builder()
@@ -26,71 +26,44 @@ test.describe('Check Main Left menu', function() {
 
     });
 
-/*
-    test.it('Проверяем', function() {
-        driver.findElements(By.css("#content > ul > li > a")).then(function (tabElems) {
-            var j=1;
-            for (i = 0; i < tabElems.length; i++)
-            {
-                var path1 = "//div[@class='tab-content']/div[" + j + "]//a";
-                console.log(path1, "path1");
-                var path2 = "//div[@class='tab-content']/div[" + j + "]//a//div[contains(@class, 'sticker')]";
-                console.log(path2, "path2");
- driver.manage().timeouts().implicitlyWait(10000/!*ms*!/);
- linlkLength = driver.findElements(By.xpath(path1)).length;
- driver.manage().timeouts().implicitlyWait(10000/!*ms*!/);
- stickLength = driver.findElements(By.xpath(path2)).length;
- driver.manage().timeouts().implicitlyWait(10000/!*ms*!/);
-                tabElems[i].click();
-
-
-                console.log(linlkLength, "linlkLength");
-                console.log(stickLength, "stickLength");
-                j++;
-            }
-        });
-    });
-*/
-
-    test.it('Проверяем', function() {
-        driver.findElements(By.css("#content > ul > li > a")).then(function (tabElems) {
-            i=1;
-            tabElems.forEach(function (elemTab) {
-                
-                var path1 = "//div[@class='tab-content']/div[" + i + "]//a";
-                var path2 = "//div[@class='tab-content']/div[" + i + "]//a//div[contains(@class, 'sticker')]";
-
-                elemTab.click();
-                driver.manage().timeouts().implicitlyWait(5000/*ms*/);
-                driver.findElement(By.css("#content > ul > li.active > a")).then(function (elem) {
-                    return elem.getAttribute("hash");
-                }).then(function (elem) {
-                    driver.manage().timeouts().implicitlyWait(5000/*ms*/);
-                    driver.findElements(By.xpath(path1)).then(function (elLinks) {
-                        return linlkLength = elLinks.length;
-                    }).then(function (elem) {
-                        driver.manage().timeouts().implicitlyWait(5000/*ms*/);
-                        driver.findElements(By.xpath(path2)).then(function (elSticks) {
-                            return stickLength = elSticks.length;
-                        })
-                    }).then(function () {
-                        assert.equal(linlkLength,stickLength);
-                        //console.log(linlkLength, "linlkLength")
-                        //console.log(stickLength, "stickLength");
-
-                    });
-                });
-                //assert.equal(linlkLength,stickLength);
-                i++
-/*
-                console.log(linlkLength, "linlkLength")
-                console.log(stickLength, "stickLength");
-*/
-            });
-        });
-    });
-
     test.after(function() {
         driver.quit();
     });
+
+    test.it('Проверяем', function() {
+        driver.findElements(By.css("#content > ul > li > a")).then((tabElems) => {
+            var arrTab = [];
+            tabElems.map((curTab) => {
+                arrTab.push(
+                    curTab.click().then(
+                        (click) => {
+                            driver.findElement(By.css("#content > ul > li.active > a"))
+                                .then((elem) => {
+                                    elem.getAttribute("hash").then((attr) => {
+
+                                        var arrElems = [];
+                                        driver.findElements(By.css(attr + " a")).then((elems) => {
+                                            elems.map((curElem) => {
+                                                arrElems.push(
+                                                    curElem.findElements(By.css(".sticker"))
+                                                        .then((sticks)=>{
+                                                        assert.ok(sticks.length >0, "У элемента должно быть как минимум 1 стикер")
+                                                        })
+                                                );
+                                            });
+                                            $q.all(arrElems);
+                                        });
+                                    })
+                                });                    //*[contains(@id,'campaigns')]//a//child::div[contains(@class, 'sticker')]
+                            return true;
+                        },
+                        (err) => {
+                            return false;
+                        }
+                    ));
+            });
+            $q.all(arrTab);
+        });
+    });
+
 });
