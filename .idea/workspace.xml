@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228ff708-3c10-47da-87e6-607dbbc8df4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB/Less7_Lab13.js" afterPath="$PROJECT_DIR$/LAB/Less7_Lab13.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB/Less4_Lab8.js" afterPath="$PROJECT_DIR$/LAB/Less4_Lab8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB/Less6_Lab11.js" afterPath="$PROJECT_DIR$/LAB/Less6_Lab11.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,14 +27,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Less7_Lab13.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LAB/Less7_Lab13.js">
+      <file leaf-file-name="Less6_Lab11.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LAB/Less6_Lab11.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="81">
+              <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,7 +63,6 @@
         <option value="$PROJECT_DIR$/LAB/Less4_Lab7-1.js" />
         <option value="$PROJECT_DIR$/LAB/package.json" />
         <option value="internal/process/next_tick.js" />
-        <option value="$PROJECT_DIR$/LAB/Less6_Lab11.js" />
         <option value="$PROJECT_DIR$/LAB/Less4_Lab9.js" />
         <option value="$PROJECT_DIR$/LAB/less5_lab10.js" />
         <option value="$PROJECT_DIR$/LAB/less5_lab10FF.js" />
@@ -72,8 +70,9 @@
         <option value="$PROJECT_DIR$/LAB/Less4_Lab7.js" />
         <option value="$PROJECT_DIR$/LAB/Less6_Lab12.js" />
         <option value="$PROJECT_DIR$/LAB/Less8_Lab14.js" />
-        <option value="$PROJECT_DIR$/LAB/Less4_Lab8.js" />
         <option value="$PROJECT_DIR$/LAB/Less7_Lab13.js" />
+        <option value="$PROJECT_DIR$/LAB/Less4_Lab8.js" />
+        <option value="$PROJECT_DIR$/LAB/Less6_Lab11.js" />
       </list>
     </option>
   </component>
@@ -141,7 +140,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LAB/Less7_Lab13.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LAB/Less6_Lab11.js" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.10.2" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -624,7 +623,7 @@
       <ui>bdd</ui>
       <extra-mocha-options>-t1000</extra-mocha-options>
       <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/LAB/Less7_Lab13.js</test-file>
+      <test-file>$PROJECT_DIR$/LAB/Less6_Lab11.js</test-file>
       <method />
     </configuration>
     <list size="5">
@@ -660,44 +659,44 @@
       <workItem from="1494074924807" duration="136650000" />
       <workItem from="1494335780714" duration="42386000" />
       <workItem from="1494419843086" duration="136283000" />
-      <workItem from="1494811935789" duration="39426000" />
+      <workItem from="1494811935789" duration="58611000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test7 - 2017.05.16 at 13h 00m 53s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 48m 05s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 11m 36s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 48m 36s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 13m 52s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 54m 22s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 17m 44s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 55m 06s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 17m 49s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 56m 09s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 17m 55s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 57m 46s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 18m 13s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 58m 56s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 25m 24s.xml">
+    <history-entry file="test7 - 2017.05.16 at 21h 59m 56s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 25m 46s.xml">
+    <history-entry file="test7 - 2017.05.16 at 22h 02m 36s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 13h 26m 19s.xml">
+    <history-entry file="test7 - 2017.05.16 at 22h 06m 59s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="472023000" />
+    <option name="totallyTimeSpent" value="491208000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -718,11 +717,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28710726" sideWeight="0.48614073" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28710726" sideWeight="0.5074627" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.117803834" sideWeight="0.5111441" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28710726" sideWeight="0.5138593" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28710726" sideWeight="0.49253732" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -734,7 +733,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14943215" sideWeight="0.5117302" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25785482" sideWeight="0.64712155" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25785482" sideWeight="0.8134328" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -779,11 +778,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/LAB/Less4_Lab7.js</url>
-          <line>82</line>
-          <option name="timeStamp" value="654" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/LAB/Less8_Lab14.js</url>
           <line>37</line>
           <properties />
@@ -799,7 +793,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="789" />
+      <option name="time" value="831" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="mocha-javascript-test-runner">
@@ -844,6 +838,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2052">
           <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -942,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/node_modules/selenium-webdriver/example/google_search_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LAB/node_modules/selenium-webdriver/lib/by.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1015,23 +1003,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/Less6_Lab11.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1497">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LAB/674.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/Less6_Lab12.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="80" column="50" lean-forward="false" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="50" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab9.js">
@@ -1052,14 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab7.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LAB/node_modules/selenium-webdriver/lib/webdriver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -1076,39 +1042,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LAB/less5_lab10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB/node_modules/selenium-webdriver/example/google_search_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1458">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LAB/Less8_Lab14.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="549">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/less5_lab10.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LAB/Less7_Lab13.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <caret line="77" column="86" lean-forward="false" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="86" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB/Less6_Lab12.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="105" column="71" lean-forward="false" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="71" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#619#1118#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="54" column="43" lean-forward="true" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB/Less6_Lab11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
