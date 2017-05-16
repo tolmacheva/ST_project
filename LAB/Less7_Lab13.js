@@ -72,9 +72,10 @@ test.describe('Регистрация пользователя', function() {
                     arrDel.push(
                         driver.findElements(By.css("table tr td:nth-child(6) i.fa-trash"))
                             .then(function () {
+                                var checkElem = driver.findElement(By.css("#box-checkout > div.summary.wrapper"));
                                 driver.findElement(By.css("table  tr:nth-child(1) > td:nth-child(6) i.fa-trash")).click()
                                     .then((clickDel) => {
-                                        driver.wait(until.stalenessOf(driver.findElement(By.css("#box-checkout > div.summary.wrapper"))),1000);
+                                        driver.wait(until.stalenessOf(checkElem),1000);
                                     });
                             })
                     )

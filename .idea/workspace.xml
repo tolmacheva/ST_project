@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228ff708-3c10-47da-87e6-607dbbc8df4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB/Less4_Lab8.js" afterPath="$PROJECT_DIR$/LAB/Less4_Lab8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB/Less7_Lab13.js" afterPath="$PROJECT_DIR$/LAB/Less7_Lab13.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,22 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Less4_Lab8.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab8.js">
+      <file leaf-file-name="Less7_Lab13.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LAB/Less7_Lab13.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="less5_lab10.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LAB/less5_lab10.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-702">
-              <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="432">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,9 +71,9 @@
         <option value="$PROJECT_DIR$/LAB/less5_lab10IE.js" />
         <option value="$PROJECT_DIR$/LAB/Less4_Lab7.js" />
         <option value="$PROJECT_DIR$/LAB/Less6_Lab12.js" />
-        <option value="$PROJECT_DIR$/LAB/Less7_Lab13.js" />
         <option value="$PROJECT_DIR$/LAB/Less8_Lab14.js" />
         <option value="$PROJECT_DIR$/LAB/Less4_Lab8.js" />
+        <option value="$PROJECT_DIR$/LAB/Less7_Lab13.js" />
       </list>
     </option>
   </component>
@@ -149,7 +141,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LAB/Less4_Lab8.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LAB/Less7_Lab13.js" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.10.2" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -632,7 +624,7 @@
       <ui>bdd</ui>
       <extra-mocha-options>-t1000</extra-mocha-options>
       <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/LAB/Less4_Lab8.js</test-file>
+      <test-file>$PROJECT_DIR$/LAB/Less7_Lab13.js</test-file>
       <method />
     </configuration>
     <list size="5">
@@ -668,20 +660,11 @@
       <workItem from="1494074924807" duration="136650000" />
       <workItem from="1494335780714" duration="42386000" />
       <workItem from="1494419843086" duration="136283000" />
-      <workItem from="1494811935789" duration="38546000" />
+      <workItem from="1494811935789" duration="39426000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test7 - 2017.05.16 at 11h 20m 36s.xml">
-      <configuration name="test7" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 11h 40m 22s.xml">
-      <configuration name="test7" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="test7 - 2017.05.16 at 12h 16m 22s.xml">
-      <configuration name="test7" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="test7 - 2017.05.16 at 13h 00m 53s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -703,9 +686,18 @@
     <history-entry file="test7 - 2017.05.16 at 13h 18m 13s.xml">
       <configuration name="test7" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="test7 - 2017.05.16 at 13h 25m 24s.xml">
+      <configuration name="test7" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test7 - 2017.05.16 at 13h 25m 46s.xml">
+      <configuration name="test7" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test7 - 2017.05.16 at 13h 26m 19s.xml">
+      <configuration name="test7" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="471143000" />
+    <option name="totallyTimeSpent" value="472023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1042,14 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/Less7_Lab13.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab9.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -1102,6 +1086,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LAB/less5_lab10.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-702">
@@ -1110,11 +1102,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB/Less4_Lab8.js">
+    <entry file="file://$PROJECT_DIR$/LAB/Less7_Lab13.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="432">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
