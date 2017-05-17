@@ -47,14 +47,14 @@ test.describe('Check Main Left menu', function() {
                                                 arrElems.push(
                                                     curElem.findElements(By.css(".sticker"))
                                                         .then((sticks)=>{
-                                                        assert.ok(sticks.length >0, "У элемента должно быть как минимум 1 стикер")
+                                                        assert.strictEqual( sticks.length, 1, "У элемента должен быть 1 стикер")
                                                         })
                                                 );
                                             });
                                             $q.all(arrElems);
                                         });
-                                    })
-                                });                    //*[contains(@id,'campaigns')]//a//child::div[contains(@class, 'sticker')]
+                                    });
+                                });
                             return true;
                         },
                         (err) => {
