@@ -61,12 +61,13 @@ test.describe('Регистрация пользователя', function() {
             exLinks.map((curLink) => {
                 arrlincks.push(curLink.click().then(
                     (click) => {
-                        driver.sleep(10000);
                         getNewWindow(curWindow).then((newWindow)=>{
                             if (newWindow != null) {
                             driver.switchTo().window(newWindow);
-                            driver.close();
-                            driver.switchTo().window(curWindow);
+                            driver.wait(until.elementLocated(By.tagName('title')), 10000/*ms*/).then(() =>{
+                                driver.close();
+                                driver.switchTo().window(curWindow);
+                            })
                         }})
                     },
                     (err) => {
