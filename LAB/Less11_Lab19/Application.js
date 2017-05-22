@@ -7,10 +7,9 @@ var mainPage = require('./MainPage');
 var productPage = require('./ProductPage');
 var basketPage = require('./BasketPage');
 
-class Application{
+class Application {
 
-    constructor()
-    {
+    constructor() {
         this.driver = new webdriver.Builder()
             .withCapabilities({'unexpectedAlertBehaviour': 'dismiss'})
             .forBrowser('chrome')
@@ -21,44 +20,42 @@ class Application{
         this.basketPage = new basketPage.BasketPage(this.driver);
     }
 
-    quit()
-    {
+    quit() {
         this.driver.quit();
     }
 
-    getTabByName(tabName)
-    {
+    getTabByName(tabName) {
         this.mainPage.open().getTabByName(tabName);
     }
 
-    ignoreOpenProductPage(tabName, i)
-    {
+    ignoreOpenProductPage(tabName, number) {
         this.mainPage.open();
         this.mainPage.getTabByName(tabName);
-        this.mainPage.chooseProductOnTabByNumber(tabName, i);
+        this.mainPage.chooseProductOnTabByNumber(tabName, number);
         this.productPage.backHome();
     }
 
-    chooseProduct(tabName, i)
-    {
-        this.mainPage.chooseProductOnTabByNumber(tabName, i);
+    chooseProduct(tabName, number) {
+        this.mainPage.chooseProductOnTabByNumber(tabName, number);
     }
 
-    chooseSizeProductAndPutInBasket(size)
-    {
+    chooseSizeProductAndPutInBasket(size) {
         this.mainPage.enterSize(size);
         this.mainPage.submitBuy();
+    }
+
+    checkProductInBasket(count) {
+        this.mainPage.checkBasket(count);
         this.mainPage.backHome();
     }
 
-    checkProductInBasket(count)
-    {
-        this.mainPage.checkBasket(count);
-    }
-
-    deleteProductsInBasket(){
-        this.basketPage.open();
-        //this.basketPage.deleteProductAndCheckSummary()
+    deleteProductsInBasket() {
+        this.mainPage.getBasket().then((basket)=>{
+            basket.click().then(()=> {
+                this.driver.manage().timeouts().implicitlyWait(1000);
+                this.basketPage.deleteProductAndCheckSummary()
+            });
+        });
     }
 }
 

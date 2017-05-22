@@ -19,25 +19,19 @@ class MainPage {
         return this;
     }
 
-    putProductInBasket(tabName)
-    {
-        getTabByName(tabName);
-
-    }
-
     getTabByName(tabName)
     {
         this.driver.findElement(By.linkText(tabName)).click();
     }
 
-    chooseProductOnTabByNumber(tabName,i)
+    chooseProductOnTabByNumber(tabName,number)
     {
         switch (tabName)
         {
             case "Campaign Products":
                 this.driver.findElements(By.xpath("//*[@id='campaign-products']//a")).then
                 ((products) =>{
-                    products[i-1].click();
+                    products[number-1].click();
                     this.driver.wait(until.elementLocated(By.id("box-product")));
                 });
                 break;
@@ -63,6 +57,11 @@ class MainPage {
 
     backHome(){
         this.driver.findElement(By.linkText("Home")).click();
+    }
+
+    getBasket()
+    {
+        return this.driver.findElement(By.css("#cart > a"));
     }
 
 }

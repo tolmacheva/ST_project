@@ -18,7 +18,7 @@ test.describe('Последовательно добавить продукт в
     });
 
     test.it('Test', function () {
-        var sizeProduct = ["Small"]; //, "Medium", "Large"
+        var sizeProduct = ["Small", "Medium", "Large"];
         var i=1;
 
         аpp.ignoreOpenProductPage(tabName, 1);
@@ -30,6 +30,6 @@ test.describe('Последовательно добавить продукт в
             i++;
         });
 
-        //аpp.deleteProductsInBasket();
+        аpp.deleteProductsInBasket();
     });
 });
