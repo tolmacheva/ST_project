@@ -1,0 +1,65 @@
+﻿/**
+ * Приложение
+ */
+
+var webdriver = require('selenium-webdriver');
+var mainPage = require('./MainPage');
+var productPage = require('./ProductPage');
+var basketPage = require('./BasketPage');
+
+class Application{
+
+    constructor()
+    {
+        this.driver = new webdriver.Builder()
+            .withCapabilities({'unexpectedAlertBehaviour': 'dismiss'})
+            .forBrowser('chrome')
+            .build();
+
+        this.mainPage = new mainPage.MainPage(this.driver);
+        this.productPage = new productPage.ProductPage(this.driver);
+        this.basketPage = new basketPage.BasketPage(this.driver);
+    }
+
+    quit()
+    {
+        this.driver.quit();
+    }
+
+    getTabByName(tabName)
+    {
+        this.mainPage.open().getTabByName(tabName);
+    }
+
+    ignoreOpenProductPage(tabName, i)
+    {
+        this.mainPage.open();
+        this.mainPage.getTabByName(tabName);
+        this.mainPage.chooseProductOnTabByNumber(tabName, i);
+        this.productPage.backHome();
+    }
+
+    chooseProduct(tabName, i)
+    {
+        this.mainPage.chooseProductOnTabByNumber(tabName, i);
+    }
+
+    chooseSizeProductAndPutInBasket(size)
+    {
+        this.mainPage.enterSize(size);
+        this.mainPage.submitBuy();
+        this.mainPage.backHome();
+    }
+
+    checkProductInBasket(count)
+    {
+        this.mainPage.checkBasket(count);
+    }
+
+    deleteProductsInBasket(){
+        this.basketPage.open();
+        //this.basketPage.deleteProductAndCheckSummary()
+    }
+}
+
+exports.Application = Application;
